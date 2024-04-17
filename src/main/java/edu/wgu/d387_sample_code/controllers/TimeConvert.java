@@ -6,6 +6,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
+// Class inheritance example
 @CrossOrigin(origins = "http://localhost:4200")
 public class TimeConvert {
 

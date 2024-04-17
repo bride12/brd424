@@ -14,7 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-
+// Database example
 @Entity
 @Table(name = "Room")
 public class RoomEntity {

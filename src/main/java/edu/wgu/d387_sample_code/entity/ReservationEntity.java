@@ -4,6 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+// Class polymorphism, encapsulation example
 @Entity
 @Table(name = "Reservation")
 public class ReservationEntity {

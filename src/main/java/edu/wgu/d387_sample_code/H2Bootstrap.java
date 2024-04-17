@@ -7,7 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 
-
+// Search functionality example
+// Report generation
 @Component
 public class H2Bootstrap implements CommandLineRunner {
 
