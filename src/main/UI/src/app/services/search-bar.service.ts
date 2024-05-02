@@ -9,7 +9,7 @@ export class SearchBarService {
   public readonly overlayOpen = signal(false);
 
   public readonly recentSearches = signal<string[]>(
-    ["Excursions (Coming Soon!)", "Locations (Coming Soon!)"]);
+    ["Room Service", "Local Map", "Things to do in Toronto", "Excursions (Coming Soon!)", "Locations (Coming Soon!)"]);
     /*JSON.parse(window.localStorage.getItem('recentSearches') ?? '[]')
   );*/
 
