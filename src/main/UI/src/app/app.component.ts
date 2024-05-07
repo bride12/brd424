@@ -10,6 +10,7 @@ import {provideRouter, RouterOutlet, withComponentInputBinding} from "@angular/r
 import {MatIcon} from "@angular/material/icon";
 import {provideAnimationsAsync} from "@angular/platform-browser/animations/async";
 import { routes } from "./app.routes";
+import {Location, LocationStrategy} from "@angular/common";
 
 
 @Component({
@@ -25,9 +26,10 @@ export class AppComponent implements OnInit{
 
   presentationTimes$!: Observable<string>
 
-  constructor(private httpClient:HttpClient){}
+  constructor(private httpClient:HttpClient, private location:Location, private locationStrategy:LocationStrategy){}
 
-  private baseURL:string='http://localhost:8080';
+  //private baseURL:string='http://localhost:8080';
+  private baseURL:string=this.location.path();
 
   private getUrl:string = this.baseURL + '/room/reservation/v1/';
   private postUrl:string = this.baseURL + '/room/reservation/v1';

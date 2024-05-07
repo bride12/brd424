@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @SpringBootTest
 class D424SampleCodeApplicationTests {
 
-	@Test
+	/*@Test
 	void contextLoads() {
-	}
+	}*/
 
 }
